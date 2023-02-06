@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    font-family: 'Libre Baskerville', serif;
+}
+.nav-link{
+    font-family: 'Libre Baskerville', serif;
+}
+.collapse a{
+    color: white;
+    position: relative;
+}
+.Logo{
+    width:80px;
+    border-radius: 55%;
+}
+.navbar{
+    background:linear-gradient(#0da4f2,skyblue,white) ;
+}
+
+ .collapse a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: linear-gradient(black,black,white);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.collapse a:hover::after{
+    width: 100%;
+
+} 
+.flex{
+    display: flex;
+}
+.d1{
+    margin: 5%;
+    width: 90%;
+    height: 50%;
+    /* background-image: url(https://images.pexels.com/photos/1906440/pexels-photo-1906440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: ; */
+}
+.d1 h2{
+    padding: 5%;
+    padding-bottom: 2%;
+    color: black;
+}
+.d1 p{
+    padding: 5%;
+    padding-top: 1%;
+    padding-left: 10%;
+    font-size: 1.2rem;
+    color: black;
+}
+.card-group{
+    margin: 5%;
+    
+}
+.card{
+    background:linear-gradient(rgb(227, 163, 67),rgb(214, 173, 112));
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+#b1{
+  background-color: blue;
+}
+#b2{
+  background-color: green;
+}
+#b3{
+  background-color: yellow;
+}
+@media (max-width:990px) {
+    .collapse a{
+        color: black;
+    }
+    
+}
